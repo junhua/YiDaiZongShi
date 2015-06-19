@@ -1,0 +1,1691 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset134 STHeitiSC-Light;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 import java.io.BufferedInputStream;\
+import java.io.ByteArrayOutputStream;\
+import java.io.IOException;\
+import java.io.InputStream;\
+import java.net.*;\
+import java.io.*;\
+import java.text.DateFormat;\
+import java.text.SimpleDateFormat;\
+import java.util.*;\
+\
+import flex.messaging.io.amf.client.AMFConnection;\
+import flex.messaging.io.amf.ASObject;\
+import flex.messaging.io.amf.client.exceptions.ClientStatusException;\
+import flex.messaging.io.amf.client.exceptions.ServerStatusException;\
+import flex.messaging.messages.RemotingMessage;\
+\
+public class test2\
+\{\
+	public static AMFConnection amfConnection;\
+	public static int userID; public static String userName;\
+\
+	public static void main(String args[]) throws Exception\
+	\{\
+		String _userID="andyhidy",userPWD="andyhidyy"; userName = "vivajh"; String server = "35";\
+		int minLvl=94, maxLvl=110;int city=1;\
+		\
+//		_userID = "yap6702";  userPWD = "andyhidyy";  minLvl=87;  maxLvl=90;  userName = "
+\f1 \'d4\'aa\'bb\'af
+\f0 ";\
+//		_userID = "ryan1599";  userPWD = "70809010";  minLvl=0;  maxLvl=100;  userName = "
+\f1 \'9e\'f5\'b6\'55
+\f0 ";\
+//		_userID = "andyhidy1";  userPWD = "andyhidy2";  minLvl=68;  maxLvl=74;  userName = "
+\f1 \'ce\'f7\'c3\'c5\'d5\'d1\'d1\'a9
+\f0 "; \
+//		_userID = "Yoyoyo1234";  userPWD = "abc1407";  minLvl=65;  maxLvl=74;  userName = "
+\f1 \'b2\'dc\'d0\'a1\'cc\'96
+\f0 ";\
+//		_userID = "v00001";  userPWD = "111111";  minLvl=30;  maxLvl=50;  userName = "viva01";\
+//		_userID = "v00002";  userPWD = "222222";  minLvl=30;  maxLvl=50;  userName = "viva02";\
+//		_userID = "v00003";  userPWD = "333333";  minLvl=30;  maxLvl=50;  userName = "viva03";\
+//		_userID = "v00004";  userPWD = "000000";  minLvl=30;  maxLvl=50;  userName = "viva04";\
+//		_userID = "v00005";  userPWD = "000000";  minLvl=30;  maxLvl=50;  userName = "viva05";\
+//		_userID = "v00006";  userPWD = "000000";  minLvl=30;  maxLvl=50;  userName = "viva06";\
+		_userID = "v00007";  userPWD = "000000";  minLvl=30;  maxLvl=50;  userName = "viva07";\
+//		_userID = "andyhidy2";  userPWD = "andyhidy3";  minLvl=30;  maxLvl=50;  userName = "
+\f1 \'b4\'f3\'c7\'e7
+\f0 ";\
+//		_userID = "PKQ8989";  userPWD = "PFJ91500";  minLvl=89;  maxLvl=100;  userName = "
+\f1 \'c7\'c7\'b7\'e5
+\f0 ";\
+//		_userID = "felix90";  userPWD = "000000";  minLvl=0;  maxLvl=100;  userName = "
+\f1 \'fc\'49\'b0\'fc\'d7\'d0
+\f0 ";\
+//		_userID = "sam151";  userPWD = "90809081";  minLvl=86;  maxLvl=89;  userName = "
+\f1 \'b5\'c4\'b5\'c3\'b5\'d8
+\f0 ";\
+//		_userID = "412494535";  userPWD = "hezhiwu1244";  minLvl=91;  maxLvl=96;  userName = "
+\f1 \'c1\'f8\'ba\'f3\'cd\'f1
+\f0 ";\
+		\
+//		amfConnection = connect(_userID,userPWD,server);\
+//		doJingJi();\
+\
+//		explorePetHill(3,2); //
+\f1 \'cc\'bd\'eb\'55
+\f0  String  int mountain, int round\
+//		doYunYou( 5000, 1);  //
+\f1 \'c7\'e0\'b3\'c7\'c9\'bd
+\f0 \
+//		doYunYou( 900, 2);  //
+\f1 \'ce\'e4\'b5\'b1\'c9\'bd
+\f0 \
+//		doYunYou( 1800, 3);  //
+\f1 \'c0\'a5\'c2\'d8\'c9\'bd
+\f0 \
+//		doYunYou( 1000, 4);  //
+\f1 \'bb\'aa\'c9\'bd
+\f0 \
+//		doYunYou( 500, 5);  //
+\f1 \'bb\'c6\'c9\'bd
+\f0 \
+\
+//		serveInnGuest();\
+//		getReward();	//
+\f1 \'c3\'bf\'c8\'d5\'aa\'84\'84\'ee
+\f0 \
+//		int count=0;\
+//		while(count++<10)\{\
+		while(true)\{\
+			try\{\
+				amfConnection = connect(_userID,userPWD,server);\
+//				oneTimeGamble();\
+				\
+//				tradeGoodsBuildShip2();\
+//				tradeGoodsBuildShip();\
+//				tradeGoods();\
+//				tradePrice();\
+//				getReward();	//
+\f1 \'c3\'bf\'c8\'d5\'aa\'84\'84\'ee
+\f0 \
+//				\
+//				serveInnGuest();\
+\
+//				doZhixian(150); // 
+\f1 \'d6\'a7\'be\'80\'a1\'a3
+\f0  60
+\f1 \'a3\'ba\'b9\'e2\'c3\'f7\'ed\'94
+\f0 	\
+//				jiebiao(minLvl,maxLvl); //
+\f1 \'bd\'d9\'e7\'53
+\f0 \
+//				jiebiaolist(minLvl,maxLvl);toSleep(5000);\
+//				while(true)doHijack(3629); // 
+\f1 \'bd\'d9\'e7\'53\'d2\'bb\'b4\'ce
+\f0 \
+//				while(true)doHijack(504); // 
+\f1 \'bd\'d9\'e7\'53\'d2\'bb\'b4\'ce
+\f0 \
+//				doYunYou( 100, 1);  //
+\f1 \'c7\'e0\'b3\'c7\'c9\'bd
+\f0 \
+\
+//				doYunYou( 100, 2);  //
+\f1 \'ce\'e4\'b5\'b1\'c9\'bd
+\f0 \
+//				toSleep(10000);\
+//				doYunYou( 20, 3);  //
+\f1 \'c0\'a5\'c2\'d8\'c9\'bd
+\f0 \
+//				doYunYou( 5, 4);  //
+\f1 \'bb\'aa\'c9\'bd
+\f0 \
+//				doYunYou( 398, 5);  //
+\f1 \'bb\'c6\'c9\'bd
+\f0 \
+//				doYunYou( 20, 6);  //
+\f1 \'b6\'eb\'c3\'bc\'c9\'bd
+\f0 \
+//				doYunYou( 30, 7);  //
+\f1 \'cc\'a9\'c9\'bd
+\f0 \
+//				doYunYou2( 2, 5); //
+\f1 \'eb\'85\'df\'5b\'c8\'ab\'b2\'bf
+\f0 \
+//				tradeGoods();\
+//				playStory();\
+				\
+//				doFishing(110); // 
+\f1 \'e1\'9e\'f4\'7e\'a1\'a3
+\f0  session id, no of times\
+//				\
+//				upSkill();\
+//				inCity(city);	//
+\f1 \'93\'8c\'b3\'c7\'a3\'ac
+\f0  1
+\f1 \'d6\'d0\'e9\'67\'a3\'ac
+\f0 2
+\f1 \'d7\'f3\'c9\'cf\'a3\'ac
+\f0 3
+\f1 \'d3\'d2\'c9\'cf\'a3\'ac
+\f0 4
+\f1 \'d7\'f3\'cf\'c2\'a3\'ac
+\f0 5
+\f1 \'d3\'d2\'cf\'c2
+\f0 \
+//				inCity2();	//
+\f1 \'93\'8c\'b3\'c7
+\f0 1
+\f1 \'b4\'ce
+\f0 \
+			\
+				\
+			\}catch(Exception e)\{\
+				e.printStackTrace();\
+			\}\
+		\}\
+\
+	\}\
+	\
+	public static void oneTimeGamble() throws Exception\
+	\{\
+		\
+		String error1 = "";\
+		while(error1.length()<1)\{\
+			\
+			ASObject content = (ASObject)execute("RecruitService.getRecruitUser", new Object[] \{userID,5\});\
+			System.out.println(content);\
+			error1 = content.get("error_msg").toString();\
+			String error2 = "";\
+			while (error2.length()<1)\{\
+				ASObject content2 = (ASObject)execute("RecruitService.recruit", new Object[] \{userID,5\});\
+				System.out.println(content2);\
+				error2 = content2.get("error_msg").toString();\
+			\}\
+		\}\
+	\}\
+	\
+	public static void tradePrice() throws Exception\
+	\{\
+\
+		Map<Integer,String> town = new LinkedHashMap<Integer,String>();\
+		Map<Integer,String> goods = new LinkedHashMap<Integer,String>();\
+		town.put(1, "
+\f1 \'b8\'df\'c0\'f6
+\f0 ");\
+		town.put(2, "
+\f1 \'c8\'aa\'d6\'dd
+\f0 ");\
+		town.put(3, "
+\f1 \'c2\'e9\'d2\'dd
+\f0 ");\
+		town.put(4, "
+\f1 \'c6\'c5\'c2\'de\'d6\'de
+\f0 ");\
+		town.put(5, "
+\f1 \'cb\'d5\'c3\'c5\'b4\'f0\'c0\'b0
+\f0 ");\
+		town.put(6, "
+\f1 \'cc\'ec\'f3\'c3
+\f0 ");\
+		town.put(7, "
+\f1 \'b2\'a8\'cb\'b9
+\f0 ");\
+		town.put(8, "
+\f1 \'c2\'ed\'b4\'ef\'bc\'d3\'cb\'b9\'bc\'d3
+\f0 ");\
+		goods.put(6101,"
+\f1 \'d3\'e3\'c8\'e2
+\f0 ");\
+		goods.put(6102,"
+\f1 \'b9\'c8\'ce\'ef
+\f0 ");\
+		goods.put(6201,"
+\f1 \'c4\'be\'b2\'c4
+\f0 ");\
+		goods.put(6202,"
+\f1 \'bf\'f3\'ca\'af
+\f0 ");\
+		goods.put(6301,"
+\f1 \'c8\'be\'c1\'cf
+\f0 ");\
+		goods.put(6302,"
+\f1 \'b9\'a4\'d2\'d5\'c6\'b7
+\f0 ");\
+		goods.put(6401,"
+\f1 \'b2\'e8\'d2\'b6
+\f0 ");\
+		goods.put(6402,"
+\f1 \'b9\'f3\'bd\'f0\'ca\'f4
+\f0 ");\
+		goods.put(6501,"
+\f1 \'cf\'e3\'c1\'cf
+\f0 ");\
+		goods.put(6502,"
+\f1 \'cc\'d5\'b4\'c9
+\f0 ");\
+		String[][] output = new String[goods.size()+1][town.size()+1];\
+		Map<String,TreeMap> pricelist = new LinkedHashMap<String,TreeMap>();\
+\
+		for(int i=1;i<town.size()+1;++i)\{\
+			TreeMap<String,String> thisGoods = new TreeMap<String,String>();\
+			ASObject thisTown = (ASObject)execute("ShippingService.showShippingCtiy", new Object[] \{userID,i\});\
+			ASObject content = (ASObject)thisTown.get("content");\
+			content = (ASObject)content.get("result");\
+			ArrayList<ASObject> city_goods = (ArrayList<ASObject>)content.get("goods_info");\
+			\
+			//buy\
+			for (int j=0;j<city_goods.size();++j)\{\
+				ASObject citygood = city_goods.get(j);\
+				int city_good_id = Integer.parseInt(citygood.get("goods_id").toString());\
+				String city_price = citygood.get("price").toString();\
+				String goodname=goods.get(city_good_id);\
+				if(city_good_id>6400)\
+					thisGoods.put(goodname, city_price);\
+			\}\
+			\
+			pricelist.put(town.get(i), thisGoods);\
+		\}\
+		for(int i=0;i<pricelist.size();++i)\{\
+			System.out.println(pricelist.keySet().toArray()[i].toString() + ": "+pricelist.values().toArray()[i]);\
+		\}\
+		toSleep(10000);\
+	\}\
+	\
+	public static void lastTrade() throws Exception\{\
+		//get goods\
+		ASObject shop = (ASObject)execute("ShippingService.showShop", new Object[] \{userID\});\
+		ASObject shopContent = (ASObject)shop.get("content");\
+		shopContent=(ASObject)shopContent.get("result");\
+\
+		ArrayList<ASObject> city_goods = (ArrayList<ASObject>)shopContent.get("city_goods");\
+		ArrayList<ASObject> user_goods = (ArrayList<ASObject>)shopContent.get("user_goods");\
+\
+		//sell\
+		for (int i=0;i<user_goods.size();++i)\{\
+			ASObject good = user_goods.get(i);\
+\
+			int goods_id = Integer.parseInt(good.get("goods_id").toString());\
+			int qty = Integer.parseInt(good.get("num").toString());\
+\
+			for (int j=0;j<city_goods.size();++j)\{\
+				ASObject citygood = city_goods.get(j);\
+				int city_good_id = Integer.parseInt(citygood.get("goods_id").toString());\
+				int city_price = Integer.parseInt(citygood.get("price").toString());\
+\
+				if(goods_id == city_good_id)\{\
+					for (int k=0;k<qty;++k)\{\
+						execute("ShippingService.sellGoods", new Object[] \{userID,goods_id,1,city_price\});\
+						execute("ShippingService.addShipExp", new Object[] \{userID,0\});\
+						System.out.println(userName +": "+ k);\
+					\}\
+				\}\
+				j=city_goods.size();\
+			\}\
+		\}\
+	\}\
+\
+		\
+	\
+public static void tradeGoodsBuildShip2() throws Exception\{\
+\
+		//get ticket and time\
+		ASObject myShip= (ASObject)execute("ShippingService.showShipping", new Object[] \{userID\});\
+		ASObject content = (ASObject)myShip.get("content");\
+		System.out.println(userName+" " + content);\
+		content = (ASObject)content.get("result");\
+		String ticket=content.get("ticket").toString();\
+		int left_time=Integer.parseInt(content.get("left_time").toString());\
+		double volume = Integer.parseInt(content.get("volume").toString());\
+		String city=content.get("to_city_id").toString();\
+		\
+		System.out.println("Begin......User: "+userName+ " 
+\f1 \'c9\'cc\'c6\'b1\'a3\'ba
+\f0  "+ticket);\
+		ASObject shop = (ASObject)execute("ShippingService.showShop", new Object[] \{userID\});\
+		ASObject shopContent = (ASObject)shop.get("content");\
+		shopContent=(ASObject)shopContent.get("result");\
+		\
+		\
+		//get user goods\
+		ArrayList<ASObject> user_goods = (ArrayList<ASObject>)shopContent.get("user_goods");\
+		LinkedHashMap<Integer,Integer[]> user_goods_map = new LinkedHashMap<Integer,Integer[]>();\
+\
+		if(user_goods.size()>1)\{\
+			\
+			for(int i=0;i<user_goods.size()-1;++i)\{\
+\
+				ASObject userGood1 = user_goods.get(i);\
+				int user_good_id = Integer.parseInt(userGood1.get("goods_id").toString());\
+				int user_price = Integer.parseInt(userGood1.get("my_price").toString());\
+				int qty = Integer.parseInt(userGood1.get("num").toString());\
+				Integer[] p_q = \{user_price,qty\};\
+\
+				ASObject userGood2 = user_goods.get(i);\
+				int user_good_id2 = Integer.parseInt(userGood2.get("goods_id").toString());\
+				int user_price2 = Integer.parseInt(userGood2.get("my_price").toString());\
+				int qty2 = Integer.parseInt(userGood2.get("num").toString());\
+				Integer[] p_q2 = \{user_price2,qty2\};\
+\
+				if(user_price < user_price2)\{\
+					user_goods_map.put(user_good_id, p_q);\
+					user_goods_map.put(user_good_id2, p_q2);\
+				\}else\{\
+					user_goods_map.put(user_good_id2, p_q2);\
+					user_goods_map.put(user_good_id, p_q);\
+				\}\
+			\}\
+		\}\
+		else if (user_goods.size()==1)\{\
+			\
+			ASObject userGood1 = user_goods.get(0);\
+			\
+			int user_good_id = Integer.parseInt(userGood1.get("goods_id").toString());\
+			int user_price = Integer.parseInt(userGood1.get("my_price").toString());\
+			int qty = Integer.parseInt(userGood1.get("num").toString());\
+			Integer[] p_q = \{user_price,qty\};\
+			user_goods_map.put(user_good_id, p_q);\
+		\}\
+		\
+		int totalqty=0;\
+		for (ASObject userGood:user_goods)\{\
+			int user_good_id = Integer.parseInt(userGood.get("goods_id").toString());\
+			int user_price = Integer.parseInt(userGood.get("my_price").toString());\
+			int qty = Integer.parseInt(userGood.get("num").toString());\
+			totalqty+=qty;\
+			\
+			Integer[] p_q = \{user_price,qty\};\
+			user_goods_map.put(user_good_id, p_q);\
+		\}\
+		\
+		//get city goods\
+		\
+\
+		ArrayList<ASObject> city_goods = (ArrayList<ASObject>)shopContent.get("city_goods");\
+		LinkedHashMap<Integer,Integer> city_goods_map = new LinkedHashMap<Integer,Integer>();\
+		\
+		for(int i=user_goods_map.size();i<city_goods.size();++i)\{\
+			int id = Integer.parseInt(city_goods.get(i).get("goods_id").toString());\
+			int price = Integer.parseInt(city_goods.get(i).get("price").toString());\
+			for(int j=0;j<user_goods.size();++j)\{\
+			int userid = Integer.parseInt(user_goods.get(j).get("goods_id").toString());\
+			int userprice = Integer.parseInt(user_goods.get(j).get("price").toString());\
+			if(userprice<price)\
+				city_goods_map.put(userid, userprice);\
+			\}\
+			city_goods_map.put(id, price);\
+		\}\
+		for(int i=0;i<user_goods_map.size();++i)\{\
+			int id = Integer.parseInt(city_goods.get(i).get("goods_id").toString());\
+			int price = Integer.parseInt(city_goods.get(i).get("price").toString());\
+			city_goods_map.put(id, price);\
+		\}\
+		\
+		//sell\
+		if(totalqty<volume/2*0.8)\{			\
+			if(user_goods_map.size()>0)\{\
+				for (int id: user_goods_map.keySet())\{\
+					Integer[] p_q = user_goods_map.get(id);		\
+					int price = p_q[0];\
+					int qty = p_q[1];\
+					if(city_goods_map.containsKey(id) && price*2<city_goods_map.get(id)) \
+					\{ \
+						int city_price = city_goods_map.get(id);\
+						System.out.println(userName + " is selling all goods...");\
+//						System.out.println(userName + " sell "+ id + " price: "+ city_price);\
+						execute("ShippingService.sellGoods", new Object[] \{userID,id,qty,city_price\});\
+					\}\
+				\}\
+			\}\
+		\}else\{\
+			\
+			if(user_goods_map.size()>=1)\{\
+				for (int id: user_goods_map.keySet())\{\
+					Integer[] p_q = user_goods_map.get(id);		\
+					int price = p_q[0];\
+					int qty = p_q[1];\
+					if(city_goods_map.containsKey(id) && price*1.8<city_goods_map.get(id)) \
+					\{			\
+						int trade_id = id;\
+						int city_price = city_goods_map.get(id);\
+						int good_index=0;\
+						while(true)\{\
+							int check_id = Integer.parseInt(city_goods_map.keySet().toArray()[good_index].toString());\
+							if(trade_id!=check_id)\{\
+								good_index++;\
+							\}else\{\
+								good_index-=1;\
+								break;\
+							\}\
+						\}\
+						int i = 0;\
+						int loop = userName.equals("vivajh")?100:qty/2;\
+//						double loop = qty*(1-(price+0.0)/city_price);\
+						System.out.println(userName+ " is selling and building...");\
+						while(i < loop)\{\
+							//sell one piece \
+//							System.out.println(userName + " sell "+ trade_id + " price: "+ city_price);\
+							execute("ShippingService.sellGoods", new Object[] \{userID,trade_id,1,city_price\});\
+\
+							//buy all next\
+//							System.out.println("good_index: " + good_index);\
+							int next_price = Integer.parseInt(city_goods_map.values().toArray()[good_index].toString());\
+							int next_id = Integer.parseInt(city_goods_map.keySet().toArray()[good_index].toString());\
+\
+							String error_msg = "";\
+							while(error_msg.length()<1)\{\
+								\
+								ASObject buy = (ASObject)execute("ShippingService.buyGoods", new Object[] \{userID,next_id,1,next_price\});\
+								error_msg = buy.get("error_msg").toString();\
+//								if(error_msg.length()<1)\
+//									System.out.println(userName + " buy: "+ next_id+ " price: "+ next_price);\
+							\}\
+\
+							//build once after buying all\
+//							System.out.println(userName+" build ship.. count: " + (i+1));\
+							execute("ShippingService.addShipExp", new Object[] \{userID,0\});\
+							i++;\
+							\
+							if(i==(int)(loop))\{\
+								if(good_index>0)\{\
+									good_index--;\
+									i=0;\
+									trade_id = next_id;\
+									city_price = next_price;\
+									if(trade_id<6203)\
+//										loop=qty;\
+										loop*=2;\
+								\}else\{\
+									error_msg = "";\
+									System.out.println(userName+" is selling the last batch...");\
+									while(error_msg.length()<1)\{\
+//										System.out.println(userName + " sell: "+ next_id+ " price: "+ next_price);\
+										ASObject buy = (ASObject)execute("ShippingService.sellGoods", new Object[] \{userID,next_id,1,next_price\});\
+										error_msg = buy.get("error_msg").toString();\
+//										System.out.println(userName+" build ship..");\
+										execute("ShippingService.addShipExp", new Object[] \{userID,0\});\
+									\}\
+								\}\
+							\}\
+							\
+						\}\
+						String error_msg = "";\
+						System.out.println(userName + " is selling remaining...");\
+						while(error_msg.length()<1)\{\
+//							System.out.println(userName+" sell remaining "+id+" ...");\
+							ASObject sell = (ASObject)execute("ShippingService.sellGoods", new Object[] \{userID,id,1,city_goods_map.get(id)\});\
+							error_msg = sell.get("error_msg").toString();\
+						\}\
+					\}\
+				\}\
+			\}\
+		\}		\
+		\
+		//buy\
+		System.out.println(userName + " is buying cheap stuff...");\
+		for (int i=0;i<city_goods.size();++i)\{\
+			ASObject citygood = city_goods.get(i);\
+			int city_good_id = Integer.parseInt(citygood.get("goods_id").toString());\
+			int city_price = Integer.parseInt(citygood.get("price").toString());\
+			if((city_good_id==6501||city_good_id==6502)&&city_price<800)\{\
+				String error_msg = "";\
+				int countbuy = 1;\
+				while(error_msg.length()<1)\{\
+					ASObject buy = (ASObject)execute("ShippingService.buyGoods", new Object[] \{userID,city_good_id,1,city_price\});\
+//					System.out.println(userName + " buy"+ city_good_id+" : "  + countbuy++);\
+					error_msg = buy.get("error_msg").toString();\
+				\}\
+			\}\
+		\}	\
+		System.out.println("Done...");\
+		refresh();\
+		String usernames = "vivajh 
+\f1 \'ce\'f7\'c3\'c5\'d5\'d1\'d1\'a9
+\f0  
+\f1 \'d4\'aa\'bb\'af
+\f0 ";\
+		for(int i=0;i<20;++i)\{\
+			refresh();\
+			\
+			if(usernames.contains(userName))\{\
+				System.out.println(userName+ " refresh good...");\
+				execute("ShippingService.showDrunkery", new Object[] \{userID,city\});\
+				execute("ShippingService.shareGoods", new Object[] \{userID,6201\});\
+				execute("ShippingService.shareGoods", new Object[] \{userID,6202\});\
+				execute("ShippingService.shareGoods", new Object[] \{userID,6301\});\
+				execute("ShippingService.shareGoods", new Object[] \{userID,6302\});\
+				execute("ShippingService.shareGoods", new Object[] \{userID,6401\});\
+				execute("ShippingService.shareGoods", new Object[] \{userID,6402\});\
+				execute("ShippingService.shareGoods", new Object[] \{userID,6501\});\
+				execute("ShippingService.shareGoods", new Object[] \{userID,6502\});\
+				execute("ShippingService.shareGoods", new Object[] \{userID,6101\});\
+				execute("ShippingService.shareGoods", new Object[] \{userID,6102\});\
+			\}\
+			toSleep(left_time*1000/20);\
+			playStoryOnce();\
+			\
+		\}\
+	\}\
+	\
+	\
+	public static void tradeGoodsBuildShip() throws Exception\{\
+\
+		//get ticket and time\
+		ASObject myShip= (ASObject)execute("ShippingService.showShipping", new Object[] \{userID\});\
+		ASObject content = (ASObject)myShip.get("content");\
+		System.out.println(userName+" " + content);\
+		content = (ASObject)content.get("result");\
+		String ticket=content.get("ticket").toString();\
+		int left_time=Integer.parseInt(content.get("left_time").toString());\
+		String city=content.get("to_city_id").toString();\
+\
+		//get goods\
+		ASObject shop = (ASObject)execute("ShippingService.showShop", new Object[] \{userID\});\
+		ASObject shopContent = (ASObject)shop.get("content");\
+		shopContent=(ASObject)shopContent.get("result");\
+\
+		System.out.println("Begin......User: "+userName+ " 
+\f1 \'c9\'cc\'c6\'b1\'a3\'ba
+\f0  "+ticket);\
+\
+		ArrayList<ASObject> city_goods = (ArrayList<ASObject>)shopContent.get("city_goods");\
+		ArrayList<ASObject> user_goods = (ArrayList<ASObject>)shopContent.get("user_goods");\
+\
+		//sell\
+\
+		for (int i=0;i<user_goods.size();++i)\{\
+			ASObject good = user_goods.get(i);\
+\
+			int goods_id = Integer.parseInt(good.get("goods_id").toString());\
+			int price = Integer.parseInt(good.get("my_price").toString());\
+			int qty = Integer.parseInt(good.get("num").toString());\
+\
+			System.out.println(userName+ ", good: "+goods_id +", Price: "+price+ ", qty: "+qty);\
+			\
+				\
+			for (int j=0;j<city_goods.size();++j)\{\
+				ASObject citygood = city_goods.get(j);\
+\
+				int city_good_id = Integer.parseInt(citygood.get("goods_id").toString());\
+				int city_price = Integer.parseInt(citygood.get("price").toString());\
+				\
+				if(goods_id == city_good_id && city_price>1600)\{\
+					System.out.println("Sell good: "+city_good_id+", Price: "+city_price);\
+//					if(qty<45)\
+//						System.out.println(execute("ShippingService.sellGoods", new Object[] \{userID,goods_id,qty,city_price\}));\
+//					else\
+					for (int k=0;k<qty;++k)\{\
+						execute("ShippingService.sellGoods", new Object[] \{userID,goods_id,1,city_price\});\
+						System.out.println(userName+ " sell good: " + k);\
+						\
+						if(k<qty/2 && price*2<city_price)\{\
+							//build ship\
+							execute("ShippingService.addShipExp", new Object[] \{userID,0\});\
+							System.out.println(userName+ " add exp: " + k);\
+						\}\
+					\}\
+					j=city_goods.size();\
+\
+\
+				\}\
+			\}	\
+		\}\
+		//buy\
+		for (int i=0;i<city_goods.size();++i)\{\
+			ASObject citygood = city_goods.get(i);\
+			int city_good_id = Integer.parseInt(citygood.get("goods_id").toString());\
+			int city_price = Integer.parseInt(citygood.get("price").toString());\
+			if((city_good_id==6501||city_good_id==6502)&&city_price<800)\{\
+				String error_msg = "";\
+				int countbuy = 1;\
+				while(error_msg.length()<1)\{\
+					ASObject buy = (ASObject)execute("ShippingService.buyGoods", new Object[] \{userID,city_good_id,1,city_price\});\
+					System.out.println(userName + " buy"+ city_good_id+" : "  + countbuy++);\
+					error_msg = buy.get("error_msg").toString();\
+				\}\
+			\}\
+		\}	\
+\
+		refresh();\
+		String usernames = "vivajh 
+\f1 \'ce\'f7\'c3\'c5\'d5\'d1\'d1\'a9
+\f0  
+\f1 \'d4\'aa\'bb\'af
+\f0 ";\
+		for(int i=0;i<20;++i)\{\
+			refresh();\
+			\
+			if(usernames.contains(userName))\{\
+				System.out.println(userName+" refresh good ");\
+				execute("ShippingService.showDrunkery", new Object[] \{userID,city\});\
+				execute("ShippingService.shareGoods", new Object[] \{userID,6201\});\
+				execute("ShippingService.shareGoods", new Object[] \{userID,6202\});\
+				execute("ShippingService.shareGoods", new Object[] \{userID,6301\});\
+				execute("ShippingService.shareGoods", new Object[] \{userID,6302\});\
+				execute("ShippingService.shareGoods", new Object[] \{userID,6401\});\
+				execute("ShippingService.shareGoods", new Object[] \{userID,6402\});\
+				execute("ShippingService.shareGoods", new Object[] \{userID,6501\});\
+				execute("ShippingService.shareGoods", new Object[] \{userID,6502\});\
+				execute("ShippingService.shareGoods", new Object[] \{userID,6101\});\
+				execute("ShippingService.shareGoods", new Object[] \{userID,6102\});\
+			\}\
+			toSleep(left_time*1000/20);\
+		\}\
+	\}\
+	\
+	public static int tradeGoods() throws Exception\
+	\{\
+\
+		\
+		while(true)\{\
+			//get ticket and time\
+			ASObject myShip=myShip= (ASObject)execute("ShippingService.showShipping", new Object[] \{userID\});\
+			ASObject content = (ASObject)myShip.get("content");\
+			System.out.println(userName+" " + content);\
+			content = (ASObject)content.get("result");\
+			String ticket=content.get("ticket").toString();\
+			int left_time=Integer.parseInt(content.get("left_time").toString());\
+			int volume=Integer.parseInt(content.get("volume").toString());\
+			String city=content.get("to_city_id").toString();\
+\
+			\
+			//get goods\
+			ASObject shop = (ASObject)execute("ShippingService.showShop", new Object[] \{userID\});\
+			ASObject shopContent = (ASObject)shop.get("content");\
+			shopContent=(ASObject)shopContent.get("result");\
+\
+			System.out.println("Begin......User: "+userName+ " 
+\f1 \'c9\'cc\'c6\'b1\'a3\'ba
+\f0  "+ticket);\
+			\
+			ArrayList<ASObject> city_goods = (ArrayList<ASObject>)shopContent.get("city_goods");\
+			ArrayList<ASObject> user_goods = (ArrayList<ASObject>)shopContent.get("user_goods");\
+\
+			//sell\
+\
+			for (int i=0;i<user_goods.size();++i)\{\
+				ASObject good = user_goods.get(i);\
+\
+				int goods_id = Integer.parseInt(good.get("goods_id").toString());\
+				int price = Integer.parseInt(good.get("my_price").toString());\
+				int qty = Integer.parseInt(good.get("num").toString());\
+				\
+				System.out.println("My good: "+goods_id +", Price: "+price+ ", qty: "+qty);\
+				\
+				for (int j=0;j<city_goods.size();++j)\{\
+					ASObject citygood = city_goods.get(j);\
+					\
+					int city_good_id = Integer.parseInt(citygood.get("goods_id").toString());\
+					int city_price = Integer.parseInt(citygood.get("price").toString());\
+					if(goods_id == city_good_id && price<city_price)\{\
+						System.out.println("Sell good: "+city_good_id+", Price: "+city_price);\
+						System.out.println(execute("ShippingService.sellGoods", new Object[] \{userID,goods_id,qty,city_price\}));\
+						j=city_goods.size();\
+					\}\
+				\}	\
+			\}\
+\
+			//buy\
+			for (int i=0;i<city_goods.size();++i)\{\
+				int countbuy=0;\
+				String error_msg="";\
+				ASObject citygood = city_goods.get(i);\
+				int city_good_id = Integer.parseInt(citygood.get("goods_id").toString());\
+				int city_price = Integer.parseInt(citygood.get("price").toString());\
+				if((city_good_id==6501||city_good_id==6502)&&city_price<1000)\{\
+					error_msg = "";\
+					while(error_msg.length()<1)\{\
+						ASObject buy = (ASObject)execute("ShippingService.buyGoods", new Object[] \{userID,city_good_id,1,city_price\});\
+						System.out.println(userName+ " buy: "+ ++countbuy);\
+						error_msg = buy.get("error_msg").toString();\
+					\}\
+				\}\
+			\}\
+			\
+			refresh();\
+			for(int i=0;i<20;++i)\{\
+				refresh();\
+				String usernames = "vivajh 
+\f1 \'ce\'f7\'c3\'c5\'d5\'d1\'d1\'a9
+\f0  
+\f1 \'d4\'aa\'bb\'af
+\f0 ";\
+				if(usernames.contains(userName))\{\
+					System.out.println(userName+" refresh good: ");\
+					execute("ShippingService.showDrunkery", new Object[] \{userID,city\});\
+					execute("ShippingService.shareGoods", new Object[] \{userID,6201\});\
+					execute("ShippingService.shareGoods", new Object[] \{userID,6202\});\
+					execute("ShippingService.shareGoods", new Object[] \{userID,6301\});\
+					execute("ShippingService.shareGoods", new Object[] \{userID,6302\});\
+					execute("ShippingService.shareGoods", new Object[] \{userID,6401\});\
+					execute("ShippingService.shareGoods", new Object[] \{userID,6402\});\
+					execute("ShippingService.shareGoods", new Object[] \{userID,6501\});\
+					execute("ShippingService.shareGoods", new Object[] \{userID,6502\});\
+					execute("ShippingService.shareGoods", new Object[] \{userID,6101\});\
+					execute("ShippingService.shareGoods", new Object[] \{userID,6102\});\
+				\}\
+				toSleep(left_time*1000/20);\
+			\}\
+			\
+		\}\
+	\}\
+	\
+	public static void upSkill() throws Exception\{\
+		String error=",";\
+		while(error.length()>0)\{\
+			//365005 
+\f1 \'d2\'bb\'c6\'f8
+\f0 	\
+			error=((ASObject)execute("UserSkillService.next", new Object[] \{userID,363007\})).get("error_msg").toString();\
+			System.out.println(error);\
+		\}\
+	\}\
+	\
+	public static void doJingJi() throws Exception\
+	\{\
+		\
+		\
+		for (int i=0;i<20;++i)\{\
+\
+			if(i==0)\
+				System.out.println(execute("ChampionService.championTop100Award", new Object[] \{userID\}));\
+			System.out.println(execute("ChampionService.championMatch", new Object[] \{userID\}));\
+		\}\
+	\}\
+	\
+	\
+	public static void inCity2() throws Exception\
+	\{\
+		String error = ((ASObject)execute("AllianceBattleService.inAllianceBattle", new Object[] \{userID\})).get("error_msg").toString();\
+		while (error.contains("
+\f1 \'bb\'ee\'84\'d3\'df\'80\'ce\'b4\'e9\'5f\'ca\'bc
+\f0 "))\
+			error = ((ASObject)execute("AllianceBattleService.inAllianceBattle", new Object[] \{userID\})).get("error_msg").toString();\
+		while (true)\{\
+			for (int i=1;i<6;++i)\{\
+			System.out.println(execute("AllianceBattleService.inCity", new Object[] \{userID,i\}));\
+			\}\
+		\}\
+	\}\
+\
+	public static void inCity(int city) throws Exception\
+	\{\
+		String error = ((ASObject)execute("AllianceBattleService.inAllianceBattle", new Object[] \{userID\})).get("error_msg").toString();\
+		while (error.contains("
+\f1 \'bb\'ee\'84\'d3\'df\'80\'ce\'b4\'e9\'5f\'ca\'bc
+\f0 "))\
+			error = ((ASObject)execute("AllianceBattleService.inAllianceBattle", new Object[] \{userID\})).get("error_msg").toString();\
+		while (true)\{\
+			System.out.println(userName);\
+			System.out.println(execute("AllianceBattleService.inCity", new Object[] \{userID,city\}));\
+			\}\
+		\
+	\}\
+	\
+	public static void jiebiaolist(int minLvl, int maxLvl) throws Exception\
+	\{\
+		//get my hijack number and orange car list\
+		ASObject output = (ASObject)execute("BiaojuService.goList", new Object[] \{userID\});\
+		ASObject content = (ASObject)output.get("content");\
+\
+		//List of car\
+		@SuppressWarnings("unchecked")\
+		ArrayList<ASObject> carlist = (ArrayList<ASObject>)content.get("list");\
+		ArrayList<String> robDieYouList = new ArrayList<String>();\
+		for (int i=0;i<carlist.size();++i)\{\
+			//				System.out.println(robDieYouList);\
+\
+			ASObject thisCar = carlist.get(i);\
+			int car_color = Integer.parseInt(thisCar.get("car_color").toString());\
+			ASObject tips = (ASObject)thisCar.get("tips");\
+\
+			int hijack_me_number = Integer.parseInt(tips.get("hijack_me_num").toString());\
+			int lvl = Integer.parseInt(tips.get("level").toString());\
+			String clan = tips.get("alliance_name").toString();\
+			String name = tips.get("zm_name").toString();\
+\
+			boolean robHim = (car_color >= 5) && \
+					(hijack_me_number<5) && \
+					(lvl>=minLvl) && \
+					(lvl<=maxLvl);\
+//					&&!clan.equals("
+\f1 \'d3\'a2\'d0\'db\'c2\'93\'c3\'cb
+\f0 ") && !clan.equals("
+\f1 \'cf\'a7\'94\'a1\'b8\'e7\'c2\'93\'c3\'cb
+\f0 ")&& !clan.equals("
+\f1 \'cf\'c4\'c8\'d5\'c3\'fe\'c3\'fe\'b2\'e8
+\f0 ");\
+			if (robHim)\{\
+				//					System.out.println(((ASObject)thisCar.get("tips")).get("zm_name"));\
+\
+				robDieYouList.add("UserID: " +thisCar.get("uid")+" Name: "+ name+  " Level: " + lvl + " Clan: "+ clan);\
+//				System.out.println(thisCar);\
+			\}\
+		\}\
+		for (int i=0;i<robDieYouList.size();++i)\{\
+			System.out.println(robDieYouList.get(i));\
+\
+		\}\
+			//			ASObject output = (ASObject)execute("BiaojuService.hijack", new Object[] \{userID, 17044\});\
+			//			System.out.println(output);\
+	\}\
+\
+	public static void jiebiao(int lowestLvl, int highestLvl) throws Exception\
+	\{\
+		int hijack_num=5;\
+		try\{\
+			ASObject myCar = (ASObject)execute("BiaojuService.myBiaoJu", new Object[] \{userID\});\
+			ASObject obj = (ASObject)myCar.get("content");\
+			obj=(ASObject)obj.get("my_biaoju");\
+			int freshtime = Integer.parseInt(obj.get("free_refesh").toString());\
+\
+			while (freshtime>0)\{\
+				freshtime-=1;\
+				System.out.println(execute("BiaojuService.refreshCar", new Object[] \{userID\}));\
+				System.out.println("Refreshing..."+ freshtime +" time left");\
+			\}\
+		\}catch(Exception e)\{\
+			System.out.println(e);\
+		\}finally\{\
+			System.out.println(execute("BiaojuService.submitBiaoju", new Object[] \{userID\}));\
+		\}\
+		while (true)\{\
+			//getcar\
+		\
+			//get my hijack number and orange car list\
+			ASObject output = (ASObject)execute("BiaojuService.goList", new Object[] \{userID\});\
+			ASObject content = (ASObject)output.get("content");\
+\
+\
+			//first escape constraint: hijack number=0\
+			hijack_num=Integer.parseInt(((ASObject)content.get("my_biaoju")).get("hijack_num").toString());\
+			if (hijack_num<=0) \{System.out.println("
+\f1 \'d2\'d1\'bd\'9b\'bd\'d9\'cd\'ea\'c0\'b2\'a3\'a1
+\f0 "); return;\}\
+\
+			//List of car\
+			@SuppressWarnings("unchecked")\
+			ArrayList<ASObject> carlist = (ArrayList<ASObject>)content.get("list");\
+			ArrayList<Integer> robDieYouList = new ArrayList<Integer>();\
+			for (int i=0;i<carlist.size();++i)\{\
+				//				System.out.println(robDieYouList);\
+\
+				ASObject thisCar = carlist.get(i);\
+				int car_color = Integer.parseInt(thisCar.get("car_color").toString());\
+				ASObject tips = (ASObject)thisCar.get("tips");\
+				//				System.out.println(tips);\
+				int hijack_me_number = Integer.parseInt(tips.get("hijack_me_num").toString());\
+				int lvl = Integer.parseInt(tips.get("level").toString());\
+				String clan = tips.get("alliance_name").toString();\
+				String name = tips.get("zm_name").toString();\
+\
+				boolean robHim = (car_color == 5) && \
+						(hijack_me_number<5) && \
+						(lvl>=lowestLvl) && \
+						(lvl<=highestLvl)&&\
+						!(userName.equals("
+\f1 \'d0\'c4
+\f0 ")&&clan.equals("
+\f1 \'d0\'a6\'b0\'c1\'bd\'ad\'ba\'fe
+\f0 ")) && !clan.equals("
+\f1 \'b0\'cb\'d4\'c2\'be\'d3
+\f0 ")&&\
+						!clan.equals("
+\f1 \'d3\'a2\'d0\'db\'c2\'93\'c3\'cb
+\f0 ") && !clan.equals("
+\f1 \'cf\'a7\'94\'a1\'b8\'e7\'c2\'93\'c3\'cb
+\f0 ") &&\
+						!clan.equals("
+\f1 \'cf\'c4\'c8\'d5\'c3\'fe\'c3\'fe\'b2\'e8
+\f0 ") && !userName.equals("
+\f1 \'c4\'d1\'b6\'ae
+\f0 ");\
+\
+				if (robHim)\{\
+					robDieYouList.add(Integer.parseInt(thisCar.get("uid").toString()));\
+				\}\
+			\}\
+			for (int i=0;i<robDieYouList.size();++i)\{\
+				System.out.print("User: "+userName +" Left: "+hijack_num+" , ");\
+				System.out.println(execute("BiaojuService.hijack", new Object[] \{userID,robDieYouList.get(i)\}));\
+			\}\
+		\}\
+\
+	\}\
+\
+\
+	public static void doHijack( int uid) throws Exception\
+	\{\
+\
+		\
+		// Make a remoting call and retrieve the result.\
+		ASObject output = (ASObject)execute("BiaojuService.goList", new Object[] \{userID\});\
+		ASObject content = (ASObject)output.get("content");\
+		int hijack_num=Integer.parseInt(((ASObject)content.get("my_biaoju")).get("hijack_num").toString());\
+		\
+\
+\
+//		System.out.println("Start Hijack...");\
+		System.out.println("User: "+userName+", " +"times left: "+ hijack_num);\
+//		while (true)\{	\
+		System.out.println(execute("BiaojuService.hijack", new Object[] \{userID,uid\}));\
+			\
+//		\}\
+		//System.out.println("Sleeping ....... "+ i);	\
+		//long timeToSleep = (1000*showRandomInteger(1,3,new Random()));\
+		//System.out.println("Sleep Time2:"+timeToSleep);\
+		//toSleep(timeToSleep);\
+\
+\
+	\}\
+	\
+	public static void explorePetHill( int mountain, int round) throws Exception\
+	\{\
+		int mtID = 1000+mountain;\
+		String[] intList=\{"10069","10072","10062","10061","10081","10063","10045","10037","10033","10031","10057","10027","10028","10001","10025","10013","10003","10081","10083","10089"\};\
+		String[] bosses=\{"10060","10030"\};\
+		ArrayList<String> secondChoice = new ArrayList<String>();\
+		ArrayList<String> bossList = new ArrayList<String>();\
+		for(int i=0;i<bosses.length;++i)\{\
+			bossList.add(bosses[i]);\
+		\}\
+		for (int i=0;i<intList.length;++i)\{\
+			secondChoice.add(intList[i]);\
+		\}\
+		\
+		for (int i=0;i<round;++i)\{\
+			String eventId = "";\
+			do\
+			\{\
+				System.out.println(userName + " , "+mtID);\
+				\
+				ASObject output = (ASObject)execute("PetService.find", new Object[] \{userID, mtID, 0\});\
+				String error_msg = output.get("error_msg").toString();\
+				System.out.println(error_msg);\
+				if(error_msg.contains("
+\f1 \'ce\'ef\'c6\'b7\'b2\'bb\'d7\'e3
+\f0 "))\{\
+					System.out.println(execute("PetService.find", new Object[] \{userID, mtID, 2\}));\
+					continue;\
+				\}\
+				if(error_msg.contains("
+\f1 \'cc\'bd\'cb\'f7\'b4\'ce\'94\'b5\'d3\'c3\'cd\'ea
+\f0 "))\
+					return;\
+				output=(ASObject)output.get("content");\
+				String now_group = output.get("now_group").toString();\
+//				if(userName.equals("vivajh")&&mountain==3)\{\
+//					if(Integer.parseInt(now_group)>8)\{\
+//						System.out.println(execute("LianGongService.setSkillPositions", new Object[] \{userID, 10747,100035, 1\}));\
+//					\}\
+//					else if(Integer.parseInt(now_group)>6)\{\
+//						System.out.println(execute("LianGongService.setSkillPositions", new Object[] \{userID, 10747,100045, 1\}));\
+//					\}\
+//				\}\
+				System.out.println(output.get("event_info"));\
+				output=(ASObject)output.get("event_info");\
+			\
+				eventId = output.get("info").toString();\
+				int choice=secondChoice.contains(eventId)?2:1;\
+				toSleep(1200);\
+				refresh();\
+				System.out.println(execute("PetService.find", new Object[] \{userID, mtID, choice\}));\
+				toSleep(1200);\
+				refresh();\
+			\}while (!bossList.contains(eventId));\
+			System.out.println("Round "+ (i+1) +" completed...");\
+		\}\
+	\}\
+	public static void playStoryOnce() throws Exception\
+	\{\
+		execute("StoryService.playStory", new Object[] \{userID\});		\
+	\}\
+	\
+	public static void playStory() throws Exception\
+	\{\
+		int startTask=0;\
+		int lastTask=0;\
+		int thisTask=0;\
+		int count=1;\
+//		toSleep(420000);\
+//		for (int i=0;i<6;++i)\{\
+//			System.out.println("User: "+ userName +" Sleeping: "+ i);\
+//			toSleep(420000/6);\
+//		\}\
+		do\{\
+			System.out.println("User: "+ userName);\
+			lastTask=thisTask;\
+\
+\
+			//get rewards\
+			//			ASObject output = (ASObject)execute("StoryService.playStory", new Object[] \{userID\});\
+			//			System.out.println(execute("StoryService.playStory", new Object[] \{userID\}));\
+			ASObject output = (ASObject)execute("StoryService.playStory", new Object[] \{userID\});\
+			System.out.println(output);\
+			output=(ASObject)output.get("content");\
+			output=(ASObject)output.get("status");\
+\
+			thisTask=Integer.parseInt(output.get("story_id").toString());\
+			if (lastTask==0) lastTask=thisTask;\
+			System.out.println("User: "+userName+" \\nStarttask: "+startTask+" Lasttask: "+lastTask+" Thistask: "+thisTask+" Count: "+ count++);\
+			//levelUp\
+			if(!userName.equals("vivajh")) levelUp();\
+			toSleep(50000);\
+			refresh();\
+			if (startTask==0)\
+				startTask = thisTask;\
+		\}while(true);\
+	\}\
+\
+	public static void getReward() throws Exception\
+	\{\
+		\
+		//levelUp\
+		levelUp();\
+		\
+		//JingJi\
+		doJingJi();\
+		\
+\
+		\
+		//Daily reward\
+		System.out.println(execute("MonthRewardService.show", new Object[] \{userID\}));\
+		System.out.println(execute("MonthRewardService.receive", new Object[] \{userID\}));\
+		\
+		ASObject responses = (ASObject)execute("ActivityYunYingService.activityList", new Object[] \{userID,0\});\
+		ASObject content = (ASObject)responses.get("content");\
+		@SuppressWarnings("unchecked")\
+		ArrayList<ASObject> list = (ArrayList<ASObject>)content.get("list");\
+		for (int i=0;i<list.size();++i)\{\
+\
+			String serial_num = (String)list.get(i).get("serial_num");\
+\
+			ASObject info = (ASObject)execute("ActivityYunYingService.getInfo", new Object[] \{userID,serial_num\});\
+			info=(ASObject)info.get("content");\
+			info=(ASObject)info.get("result");\
+\
+			ArrayList<ASObject> reward_list = (ArrayList<ASObject>) info.get("reward_list");\
+			for (int j=0;j<reward_list.size();++j)\{\
+				String id = reward_list.get(j).get("id").toString();\
+				//get rewards\
+				if(!id.equals("9949"))\
+				System.out.println(execute("ActivityYunYingService.getReward", new Object[] \{userID,serial_num,id\}));\
+			\}\
+		\}\
+\
+\
+		//			Map<String, String> map = getQueryMap(list.toString());\
+		//			BufferedReader rd  = new BufferedReader(new InputStreamReader());\
+\
+\
+		//Inn\
+		serveInnGuest();\
+		// pet\
+		explorePetHill(1,2);\
+\
+	\}\
+	\
+	public static void doZhixian(int type) throws Exception\
+	\{\
+\
+		// Make a remoting call and retrieve the result.\
+		//System.out.println("Results1 = [-"+execute("TequanService.tequanList", new Object[] \{3629\})+"-]");\
+		refresh();\
+\
+//		type=70;\
+		while (true)\{\
+			// level up\
+			levelUp();\
+			System.out.println("Start Zhixian...");\
+			String getReward = "Results = [-"+execute("ZhixianService.getZhixianAward", new Object[] \{userID,type\});\
+			String doZhixian = "Results = [-"+execute("ZhixianService.autoZhixianStart", new Object[] \{userID,type\});\
+			while (doZhixian.contains("
+\f1 \'ce\'b4\'e9\'5f\'86\'a2
+\f0 ")||doZhixian.contains("
+\f1 \'cc\'f4\'91\'f0\'b4\'ce\'94\'b5\'d2\'d1\'d3\'c3\'cd\'ea
+\f0 ")||doZhixian.contains("
+\f1 \'b2\'bb\'b4\'e6\'d4\'da
+\f0 ")||doZhixian.contains("
+\f1 \'ce\'b4\'cd\'a8\'ea\'50
+\f0 "))\{\
+				type-=10;\
+				doZhixian = "Results = [-"+execute("ZhixianService.autoZhixianStart", new Object[] \{userID,type-10\});\
+				if (type<10)\{\
+					System.out.println("No more..");\
+					return;\
+				\}\
+			\}\
+		if(doZhixian.contains("
+\f1 \'f3\'77\'c1\'a6
+\f0 "))\
+			return;\
+		System.out.println(userName);\
+		System.out.println(getReward);\
+		System.out.println(doZhixian);\
+		for (int i=0;i<20;++i)\{\
+			System.out.println(userName + " is leeping... "+(20-i)+" min more");\
+			toSleep(60000);\
+			refresh();\
+		\}\
+		\}\
+		//System.out.println("Sleeping ....... "+ i);	\
+		//long timeToSleep = (1000*showRandomInteger(1,3,new Random()));\
+		//System.out.println("Sleep Time2:"+timeToSleep);\
+		//toSleep(timeToSleep);\
+\
+\
+	\}\
+\
+	public static void doYunYou(int times, int type) throws Exception\
+	\{\
+		int loopTimes=20;\
+\
+		if (times==0)\
+			loopTimes=100;\
+		else\
+			loopTimes=times;\
+\
+		for(int i=1;i<=loopTimes;i++)\
+		\{				\
+\
+\
+			// Make a remoting call and retrieve the result.\
+			//System.out.println("Results1 = [-"+execute("TequanService.tequanList", new Object[] \{3629\})+"-]");\
+			refresh();\
+\
+			System.out.println("User:" +userName + " No:"+ i);\
+			boolean sell = false;\
+			// 1\
+			ASObject output = (ASObject)execute("YunyouService.doYunyou", new Object[] \{userID,type,1\});\
+			sell = (sell||output.get("error_msg").toString().contains("
+\f1 \'b0\'d7\'e3\'79
+\f0 ")||output.get("error_msg").toString().contains("
+\f1 \'cd\'a8\'d0\'d0\'d7\'43
+\f0 "));\
+			System.out.println(output);\
+			// 2\
+			output = (ASObject)execute("YunyouService.doYunyou", new Object[] \{userID,type,2\});\
+			sell = (sell||output.get("error_msg").toString().contains("
+\f1 \'b0\'d7\'e3\'79
+\f0 ")||output.get("error_msg").toString().contains("
+\f1 \'cd\'a8\'d0\'d0\'d7\'43
+\f0 "));\
+			System.out.println(output);\
+			// 3\
+			output = (ASObject)execute("YunyouService.doYunyou", new Object[] \{userID,type,3\});\
+			sell = (sell||output.get("error_msg").toString().contains("
+\f1 \'b0\'d7\'e3\'79
+\f0 ")||output.get("error_msg").toString().contains("
+\f1 \'cd\'a8\'d0\'d0\'d7\'43
+\f0 "));\
+			System.out.println(output);\
+			// 4\
+			output = (ASObject)execute("YunyouService.doYunyou", new Object[] \{userID,type,4\});\
+			sell = (sell||output.get("error_msg").toString().contains("
+\f1 \'b0\'d7\'e3\'79
+\f0 ")||output.get("error_msg").toString().contains("
+\f1 \'cd\'a8\'d0\'d0\'d7\'43
+\f0 "));\
+			System.out.println(output);\
+			// 5\
+			output = (ASObject)execute("YunyouService.gameOne", new Object[] \{userID,type\});\
+			System.out.println("Results4 = [-"+ output +"-]");\
+			System.out.println(output.get("error_msg").toString());\
+			if (sell)\{\
+				ASObject myPackage = (ASObject)execute("PackageService.getPackageList", new Object[] \{userID\});\
+				ASObject content = (ASObject)myPackage.get("content");\
+				content = (ASObject)content.get("other");\
+				ArrayList<ASObject>suipians =(ArrayList<ASObject>)myPackage.get("tuzhi");\
+				for(int j=0;i<suipians.size();++j)\{\
+					ASObject suipian = suipians.get(j);\
+					String id = suipian.get("id").toString();\
+					String matterId = suipian.get("sys_matter_id").toString();\
+					int qty = Integer.parseInt(suipian.get("own_num").toString());\
+					if (qty>20)\{\
+						System.out.println("Selling..."+ execute("PackageService.sell", new Object[] \{userID,matterId,id,qty\}));\
+					\}\
+				\}\
+			\}\
+			refresh();\
+\
+			//System.out.println("Sleeping ....... "+ i);	\
+			//long timeToSleep = (1000*showRandomInteger(1,3,new Random()));\
+			//System.out.println("Sleep Time2:"+timeToSleep);\
+			//toSleep(timeToSleep);\
+\
+		\}					\
+	\}\
+	\
+	public static void doYunYou2(int type, int endType) throws Exception\
+	\{\
+		//sell all first\
+		ASObject myPackage = (ASObject)execute("PackageService.getPackageList", new Object[] \{userID\});\
+		ASObject content = (ASObject)myPackage.get("content");\
+		content = (ASObject)content.get("other");\
+		ArrayList<ASObject>suipians =(ArrayList<ASObject>)content.get("tuzhi");\
+		for(int j=0;j<suipians.size();++j)\{\
+			ASObject suipian = suipians.get(j);\
+			String id = suipian.get("id").toString();\
+			String matterId = suipian.get("sys_matter_id").toString();\
+			int qty = Integer.parseInt(suipian.get("own_num").toString());\
+			if (qty>50)\{\
+				System.out.println("Selling..."+ execute("PackageService.sell", new Object[] \{userID,matterId,id,qty\}));\
+			\}\
+		\}\
+		\
+		int count=0;\
+		while (type  < endType+1)\
+		\{				\
+			// Make a remoting call and retrieve the result.\
+			//System.out.println("Results1 = [-"+execute("TequanService.tequanList", new Object[] \{3629\})+"-]");\
+			refresh();\
+\
+			System.out.println("User:" +userName + " No:"+ count++ +" Type: "+type);\
+			boolean sell = false;\
+			// 1\
+			ASObject output = (ASObject)execute("YunyouService.doYunyou", new Object[] \{userID,type,1\});\
+			sell = (sell||output.get("error_msg").toString().contains("
+\f1 \'b0\'d7\'e3\'79
+\f0 ")||output.get("error_msg").toString().contains("
+\f1 \'cd\'a8\'d0\'d0\'d7\'43
+\f0 "));\
+			System.out.println(output);\
+			// 2\
+			output = (ASObject)execute("YunyouService.doYunyou", new Object[] \{userID,type,2\});\
+			sell = (sell||output.get("error_msg").toString().contains("
+\f1 \'b0\'d7\'e3\'79
+\f0 ")||output.get("error_msg").toString().contains("
+\f1 \'cd\'a8\'d0\'d0\'d7\'43
+\f0 "));\
+			System.out.println(output);\
+			// 3\
+			output = (ASObject)execute("YunyouService.doYunyou", new Object[] \{userID,type,3\});\
+			sell = (sell||output.get("error_msg").toString().contains("
+\f1 \'b0\'d7\'e3\'79
+\f0 ")||output.get("error_msg").toString().contains("
+\f1 \'cd\'a8\'d0\'d0\'d7\'43
+\f0 "));\
+			System.out.println(output);\
+			// 4\
+			output = (ASObject)execute("YunyouService.doYunyou", new Object[] \{userID,type,4\});\
+			sell = (sell||output.get("error_msg").toString().contains("
+\f1 \'b0\'d7\'e3\'79
+\f0 ")||output.get("error_msg").toString().contains("
+\f1 \'cd\'a8\'d0\'d0\'d7\'43
+\f0 "));\
+			System.out.println(output);\
+			// 5\
+			output = (ASObject)execute("YunyouService.gameOne", new Object[] \{userID,type\});\
+			System.out.println("Results4 = [-"+ output +"-]");\
+			System.out.println(output.get("error_msg").toString());\
+			if (sell)\{\
+				myPackage = (ASObject)execute("PackageService.getPackageList", new Object[] \{userID\});\
+				content = (ASObject)myPackage.get("content");\
+				content = (ASObject)content.get("other");\
+				suipians =(ArrayList<ASObject>)content.get("tuzhi");\
+				for(int j=0;j<suipians.size();++j)\{\
+					ASObject suipian = suipians.get(j);\
+					String id = suipian.get("id").toString();\
+					String matterId = suipian.get("sys_matter_id").toString();\
+					int qty = Integer.parseInt(suipian.get("own_num").toString());\
+					if (qty>50&&type<6)\{\
+						System.out.println("Selling..."+ execute("PackageService.sell", new Object[] \{userID,matterId,id,qty\}));\
+					\}\
+				\}\
+				System.out.println("Yunyou type = " + ++type);\
+			\}\
+			refresh();\
+\
+			//System.out.println("Sleeping ....... "+ i);	\
+			//long timeToSleep = (1000*showRandomInteger(1,3,new Random()));\
+			//System.out.println("Sleep Time2:"+timeToSleep);\
+			//toSleep(timeToSleep);\
+\
+		\}					\
+	\}\
+	\
+	public static void sellSuiPian() throws Exception\
+	\{\
+		ArrayList<Integer> itemlist = new ArrayList<Integer>();\
+		ASObject pakg = (ASObject)execute("PackageService.getPackageList", new Object[] \{userID\});\
+		ASObject other = (ASObject)pakg.get("other");\
+		\
+		ArrayList<ASObject> items = (ArrayList<ASObject>)other.get("other");\
+		for (int i=0;i<items.size();++i)\{\
+			ASObject item = items.get(i);\
+			if( Integer.parseInt(item.get("own_num").toString())>29)\{\
+				itemlist.add(Integer.parseInt(item.get("id").toString()));\
+			\}\
+		\}\
+		\
+		for(int i=0;i<itemlist.size();++i)\{\
+			System.out.println(execute("ZhixianService.autoZhixianStart", new Object[] \{userID,1,2,3\}));\
+		\}\
+\
+	\}\
+\
+	public static void doFishing( int times) throws Exception\
+	\{\
+		int loopTimes=1;\
+\
+		if (times==0)\
+			loopTimes=100;\
+		else\
+			loopTimes=times;\
+\
+		for(int i=1;i<=loopTimes;i++)\
+		\{			\
+\
+			// Make a remoting call and retrieve the result.\
+			//Object result = amfConnection.call("TequanService.tequanList", new Object[] \{7669\});\
+			execute("LoginService.refresh", new Object[] \{userID,0\});\
+\
+			Object result = execute("AllianceActivityService.beginFish", new Object[] \{userID,2\});\
+			System.out.println("Results1 = [-"+result+"-]");\
+			amfConnection.close();\
+\
+			//long timeToSleep = (1000*showRandomInteger(1,2,new Random()));\
+			//System.out.println("Sleep Time1:"+timeToSleep);\
+			//toSleep(timeToSleep);\
+\
+			try\
+			\{				\
+				Object result2 = execute("AllianceActivityService.doneFish", new Object[] \{userID,1\});\
+				System.out.println("Results2 = [-"+result2+"-]");							\
+				amfConnection.close();\
+			\}\
+			catch (Exception e)\
+			\{\
+				e.printStackTrace();\
+				Object result2 = execute("AllianceActivityService.doneFish", new Object[] \{userID,1\});\
+				System.out.println("Results2 = [-"+result2+"-]");							\
+				amfConnection.close();					\
+			\}						\
+			System.out.println("Running ....... "+ i);			\
+		\}					\
+	\}\
+\
+	public static Map<String, String> getQueryMap(String query)   \
+	\{   \
+		String response = query;\
+		response = response.replace('\{',' ');\
+		response = response.replace('\}',' ');		\
+		String[] params = response.split(",");\
+		Map<String, String> map = new HashMap<String, String>();   \
+		for (String param : params)\
+		\{   \
+			String name = param.split(":")[0];   \
+			String value = param.split(":")[1];   \
+			//System.out.println("Here = "+name+","+value);\
+			map.put(name.trim(), value.trim());\
+		\}   \
+		return map;   \
+	\}  	\
+\
+	public static void toSleep(long milisec)\
+	\{\
+		try\
+		\{\
+			System.out.println("Sleeping for "+milisec+" millisec");\
+			Thread.currentThread();\
+			Thread.sleep(milisec);\
+		\}\
+		catch(Exception e)		\
+		\{\
+			System.out.println("Error in sleep function :"+e.getMessage());\
+		\}	\
+	\}\
+	\
+	public static void serveInnGuest() throws Exception\
+	\{\
+		/**\
+		 * InnService.clean(uid,rid), 2561,2562,2563,2564...\
+		 * Type 1: drink(uid,nid,wid), 97000000,97000001,97000002\
+		 * Type 2: rest\
+		 * Type 3: getDice(uid,nid)->dice(uid,nid,0)->receiveDice(uid,nid)\
+		 * Type 4:\
+		 * Type 5:\
+		 * Type 6\
+		 * Type 7: npc(uid,nid)\
+		 */\
+		\
+		String[] celebreties = \{"
+\f1 \'97\'ee\'d7\'f3\'ca\'b9
+\f0 ","
+\f1 \'97\'ee\'c7\'e9\'cc\'ec
+\f0 ", "
+\f1 \'8f\'88\'b9\'ab\'d7\'d3
+\f0 ","
+\f1 \'d6\'ec\'d4\'aa\'e8\'b0
+\f0 ", "
+\f1 \'86\'cc\'8e\'cd\'d6\'f7
+\f0 ","
+\f1 \'bb\'c6\'8e\'cd\'d6\'f7
+\f0 ","
+\f1 \'86\'cc\'eb\'85\'cc\'ec
+\f0 ","
+\f1 \'e6\'82\'c4\'cf\'cd\'f5
+\f0 ","
+\f1 \'b4\'f3\'c0\'ed\'bb\'ca\'b5\'db
+\f0 ","
+\f1 \'b6\'ce\'cd\'f5\'a0\'94
+\f0 ","
+\f1 \'8f\'88\'c8\'fd\'d8\'53
+\f0 "\};\
+		ArrayList<String> cList = new ArrayList<String>();\
+		for (int i=0;i<celebreties.length;++i)\{\
+			cList.add(celebreties[i]);\
+		\}\
+		\
+		String error_msg=((ASObject)execute("InnService.getInfo", new Object[] \{userID\})).get("error_msg").toString();\
+		int countRefresh=0;\
+		while(error_msg.trim().length()<1)\{\
+			ASObject newGuest=(ASObject)execute("InnService.refreshKezhan", new Object[] \{userID\});\
+			System.out.println(countRefresh++ +". "+error_msg);\
+			error_msg=newGuest.get("error_msg").toString();\
+\
+		\}\
+		\
+		//get my hijack number and orange car list\
+		ASObject output = (ASObject)execute("InnService.getInfo", new Object[] \{userID\});\
+		ASObject content = (ASObject)output.get("content");\
+\
+		\
+		@SuppressWarnings("unchecked")\
+		ArrayList<ASObject> roomlist = (ArrayList<ASObject>)content.get("room_list");\
+		ArrayList<Integer> roomID = new ArrayList<Integer>();  \
+		ArrayList<ASObject> npclist = (ArrayList<ASObject>)content.get("npc_list");\
+		\
+		ArrayList<Integer> vip = new ArrayList<Integer>();\
+		ArrayList<Integer> group1 = new ArrayList<Integer>();\
+		ArrayList<Integer> group2 = new ArrayList<Integer>();\
+//		ArrayList<Integer> group3 = new ArrayList<Integer>();\
+//		ArrayList<Integer> group4 = new ArrayList<Integer>();\
+//		ArrayList<Integer> group5 = new ArrayList<Integer>();\
+//		ArrayList<Integer> group6 = new ArrayList<Integer>();\
+//		ArrayList<Integer> group7 = new ArrayList<Integer>();\
+//		ArrayList<Integer> group8 = new ArrayList<Integer>();\
+		\
+		for (int i=0;i<npclist.size();++i)\{\
+			\
+			ASObject thisNpc = npclist.get(i);\
+			int type = Integer.parseInt(thisNpc.get("type").toString());\
+			int id = Integer.parseInt(thisNpc.get("id").toString());\
+			String name = thisNpc.get("name").toString();\
+			if(type==7)\
+			System.out.println(thisNpc + "type: "+ type);\
+			boolean doneVIP=false;\
+			\
+			//VIP\
+			if (type==7 && cList.contains(name))\{						\
+				vip.add(id);\
+				\
+			\}else\{\
+				if(type==2)\
+					group2.add(id);\
+				else\{\
+					group1.add(id);\
+				\}\
+			\}\
+		\}	\
+		if (userName.equals("vivajh")&&vip.size()<1)\{\
+			System.out.println("No vip");\
+			return;\
+			\
+		\}\
+		\
+		else if (vip.size()>0)\{\
+			System.out.println("*******************vip********************");\
+			System.out.println("User: " + userName + execute("InnService.npc", new Object[] \{userID,vip.get(0)\}));\
+			System.out.println("*******************vip********************");\
+		\}\
+		for(int i=0;i<group1.size();++i)\{\
+			System.out.println("User: " + userName + execute("InnService.drink", new Object[] \{userID,group1.get(i),0\}));\
+			System.out.println("User: " + userName + execute("InnService.getDice", new Object[] \{userID,group1.get(i)\}));\
+			System.out.println("User: " + userName + execute("InnService.dice", new Object[] \{userID,group1.get(i),0\}));\
+			System.out.println("User: " + userName + execute("InnService.receiveDice", new Object[] \{userID,group1.get(i)\}));\
+			System.out.println("User: " + userName + execute("InnService.npc", new Object[] \{userID,group1.get(i)\}));\
+			System.out.println("User: " + userName + execute("InnService.eatFood", new Object[] \{userID,group1.get(i),-1\}));\
+			System.out.println("User: " + userName + execute("InnService.eatFood", new Object[] \{userID,group1.get(i),0\}));\
+		\}\
+			\
+		while(group2.size()>vip.size())\{\
+			for(int k=0;k<roomlist.size();++k)\{\
+				String id = roomlist.get(k).get("id").toString();\
+				System.out.println("User: " + userName + " "+execute("InnService.clean", new Object[] \{userID,id\}));\
+			\}\
+			int count=Math.min(roomlist.size(), group2.size());\
+\
+			for(int k=0;k<count;++k)\{\
+				System.out.println("User: " + userName + execute("InnService.rest", new Object[] \{userID,group2.get(0)\}));\
+				group2.remove(0);\
+			\}\
+			\
+			for(int k=0;k<4;++k)\{\
+				System.out.println("Sleeping...in the counts of... "+(3-k));\
+				toSleep(130000/4);\
+				execute("LoginService.refresh", new Object[] \{userID,0\});\
+				\
+			\}\
+		\}\
+		//				System.out.println("Name = "+name+", type = "+type+", id = "+id);\
+	\}\
+	\
+	public static long myTimer(long milisec)\{\
+		long count = 0;\
+		long startTime = System.currentTimeMillis();\
+		\
+		while(count<milisec)\{\
+			count = System.currentTimeMillis() - startTime;\
+		\}\
+		\
+		return count;\
+	\}\
+	public static void levelUp() throws Exception\
+	\{\
+		System.out.println(execute("UserService.levelUp", new Object[] \{userID\}));	\
+	\}\
+	\
+	public static Object refresh() throws Exception\{\
+		return execute("LoginService.refresh", new Object[] \{userID,0\});\
+	\}\
+	\
+	public static Object execute(String command, Object[] input) throws Exception\{\
+		String error="";\
+		\
+		ASObject content = (ASObject)amfConnection.call(command, input);\
+		error = content.get("error_msg").toString();\
+		if (error.contains("
+\f1 \'b4\'f3\'82\'62\'a3\'ac\'c4\'fa\'b5\'c4\'8e\'a4\'cc\'96\'ba\'c3\'be\'c3\'9b\'5d\'bb\'ee\'84\'d3\'c1\'cb\'a3\'ac\'d5\'88\'cd\'cb\'b3\'f6\'df\'5b\'91\'f2\'d6\'d8\'d0\'c2\'b5\'c7\'e4\'9b
+\f0 "))\{\
+			toSleep(30*1000);\
+			throw new Exception();\
+		\}\
+		return content;\
+	\}\
+	public static AMFConnection connect(String _userID,String userPWD,String server)\{\
+		String baseUrl="http://et-"+server+".play168.com.tw";\
+		String uid = "";\
+		String strSID = "";\
+		String responses = "";\
+		URL serverAddress = null;\
+		HttpURLConnection connection = null;\
+		DataOutputStream wr2 = null;\
+		BufferedReader rd  = null;\
+\
+		try \
+		\{\
+			serverAddress = new URL(baseUrl+"/passport.php");\
+\
+			//set up out communications stuff\
+			connection = (HttpURLConnection)serverAddress.openConnection();\
+			//connection = (HttpURLConnection)serverAddress.openConnection(proxy);\
+			connection.setRequestMethod("POST");\
+			connection.setDoOutput(true);          \
+			connection.setReadTimeout(10000);                              \
+\
+			//35\
+			String urlParameters = "opid=67&server_id=22600"+server+"&login_pt="+_userID+"&app_type=5&device=Linux 3.0.31-383479&action=login&password="+userPWD+"&version=1.9.0";\
+			\
+\
+			wr2 = new DataOutputStream(connection.getOutputStream());\
+			wr2.writeBytes(urlParameters);\
+			wr2.flush();\
+			wr2.close();\
+			connection.connect();\
+\
+			rd  = new BufferedReader(new InputStreamReader(connection.getInputStream()));\
+\
+			StringBuilder sb = new StringBuilder();\
+			String line = null;\
+			while ((line = rd.readLine()) != null)\
+			\{              \
+				sb.append(line + '\\n');    \
+			\}                  \
+			System.out.println("[-"+sb.toString()+"-]");\
+			responses = sb.toString();\
+			\
+		\} \
+		catch (Exception e) \
+		\{          \
+			e.printStackTrace();      \
+		\} \
+		finally      \
+		\{          \
+			//close the connection, set all objects to null          \
+			connection.disconnect();          \
+			rd = null;          \
+			wr2 = null;          \
+			connection = null;      \
+		\}	\
+\
+		Map<String, String> map = getQueryMap(responses);\
+		strSID = map.get("\\"sid\\"");\
+		strSID = strSID.substring(1, strSID.length()-1);\
+		uid = map.get("\\"uid\\"");\
+		userID = Integer.parseInt(uid.substring(1,uid.length()-1));\
+		\
+		\
+		AMFConnection amfConnection = new AMFConnection();\
+		try\{\
+		amfConnection.addHttpRequestHeader("Content-type", "application/x-amf");\
+		amfConnection.addHttpRequestHeader("Cookie", "UUZUSESSID="+strSID);\
+		amfConnection.addHttpRequestHeader("x-flash-version", "11,6,602,169");\
+		amfConnection.addHttpRequestHeader("Referer	app", "/MainTwAd.swf");\
+		amfConnection.connect(baseUrl+"/amf/gateway.php?UUZUSESSID="+strSID);\
+		\}catch(Exception e)\{\
+			e.printStackTrace();\
+		\}\
+		return amfConnection;\
+		\
+	\}\
+	public static long showRandomInteger(int aStart, int aEnd, Random aRandom)\
+	\{\
+		if ( aStart > aEnd ) \{\
+			throw new IllegalArgumentException("Start cannot exceed End.");\
+		\}\
+		//get the range, casting to long to avoid overflow problems\
+		long range = (long)aEnd - (long)aStart + 1;\
+		// compute a fraction of the range, 0 <= frac < range\
+		long fraction = (long)(range * aRandom.nextDouble());\
+		return (fraction + aStart);    \
+	\}	\
+\}\
+}
